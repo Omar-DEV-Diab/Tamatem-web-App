@@ -95,5 +95,13 @@ class webViewController: UIViewController, WKNavigationDelegate {
     internal func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         progressView.isHidden = true
     }
+
+    //OD: Handling errors during the navigation process
+    func webView(_: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        let alert = UIAlertController(title: "Error", message:  error.localizedDescription, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default,  handler: {_ in
+            self.dismiss(animated: true)
+        }))
+        present(alert, animated: true, completion: nil)
     }
 }
