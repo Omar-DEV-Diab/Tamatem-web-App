@@ -11,7 +11,6 @@
 		07759B9B2A3F57C300D462FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07759B9A2A3F57C300D462FD /* SceneDelegate.swift */; };
 		07759B9D2A3F57C300D462FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07759B9C2A3F57C300D462FD /* ViewController.swift */; };
 		07759BA02A3F57C300D462FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07759B9E2A3F57C300D462FD /* Main.storyboard */; };
-		07759BA32A3F57C300D462FD /* Tamatem_web_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07759BA12A3F57C300D462FD /* Tamatem_web_App.xcdatamodeld */; };
 		07759BA52A3F57C700D462FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07759BA42A3F57C700D462FD /* Assets.xcassets */; };
 		07759BA82A3F57C700D462FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07759BA62A3F57C700D462FD /* LaunchScreen.storyboard */; };
 		0777A41E2A3F5CB700A9872E /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777A41D2A3F5CB700A9872E /* webViewController.swift */; };
@@ -24,7 +23,6 @@
 		07759B9A2A3F57C300D462FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		07759B9C2A3F57C300D462FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07759B9F2A3F57C300D462FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		07759BA22A3F57C300D462FD /* Tamatem_web_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tamatem_web_App.xcdatamodel; sourceTree = "<group>"; };
 		07759BA42A3F57C700D462FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07759BA72A3F57C700D462FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07759BA92A3F57C700D462FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				07759BA42A3F57C700D462FD /* Assets.xcassets */,
 				07759BA62A3F57C700D462FD /* LaunchScreen.storyboard */,
 				07759BA92A3F57C700D462FD /* Info.plist */,
-				07759BA12A3F57C300D462FD /* Tamatem_web_App.xcdatamodeld */,
 			);
 			path = "Tamatem web App";
 			sourceTree = "<group>";
@@ -158,7 +155,6 @@
 				0777A41E2A3F5CB700A9872E /* webViewController.swift in Sources */,
 				07759B9D2A3F57C300D462FD /* ViewController.swift in Sources */,
 				07759B992A3F57C300D462FD /* AppDelegate.swift in Sources */,
-				07759BA32A3F57C300D462FD /* Tamatem_web_App.xcdatamodeld in Sources */,
 				07F07E8A2A40A14400B3A2A5 /* URLModel.swift in Sources */,
 				07759B9B2A3F57C300D462FD /* SceneDelegate.swift in Sources */,
 			);
@@ -378,19 +374,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		07759BA12A3F57C300D462FD /* Tamatem_web_App.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				07759BA22A3F57C300D462FD /* Tamatem_web_App.xcdatamodel */,
-			);
-			currentVersion = 07759BA22A3F57C300D462FD /* Tamatem_web_App.xcdatamodel */;
-			path = Tamatem_web_App.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 07759B8D2A3F57C300D462FD /* Project object */;
 }
