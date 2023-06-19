@@ -8,12 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+    @IBAction func openBrowserBtn(_ sender: Any) {
+        let URL = "https://tamatemplus.com"
+        self.performSegue(withIdentifier: "openBrowser", sender: URL)
     }
-
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "openBrowser") {
+        }
+    }
 }
-
