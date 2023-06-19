@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0w-gP-mzL">
-                                <rect key="frame" x="130" y="367" width="135" height="135"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0w-gP-mzL">
+                                <rect key="frame" x="129" y="371" width="135" height="135"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Open Browser" backgroundImage="tamatemBtn">
                                     <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -31,6 +30,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.018537918109999999" green="0.00088123191379999998" blue="0.20736047630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C0w-gP-mzL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AjZ-OS-BQM"/>
+                            <constraint firstItem="C0w-gP-mzL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="YZc-SQ-AKo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -45,22 +48,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HBC-Wz-Yai">
-                                <rect key="frame" x="0.0" y="44" width="393" height="739"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBC-Wz-Yai">
+                                <rect key="frame" x="0.0" y="103" width="393" height="714"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NgL-pQ-LNp">
-                                <rect key="frame" x="16" y="357" width="361" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NgL-pQ-LNp">
+                                <rect key="frame" x="16" y="391" width="361" height="4"/>
                             </progressView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Ogw-Aq-7z6">
-                                <rect key="frame" x="0.0" y="0.0" width="392" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Ogw-Aq-7z6">
+                                <rect key="frame" x="-1" y="59" width="393" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="uzP-2V-KtV"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Tamatem website" id="039-eS-pcG">
                                         <leftBarButtonItems>
@@ -85,6 +88,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zkM-0x-bh5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HBC-Wz-Yai" firstAttribute="leading" secondItem="zkM-0x-bh5" secondAttribute="leading" id="7zB-J0-U5T"/>
+                            <constraint firstItem="HBC-Wz-Yai" firstAttribute="centerX" secondItem="NgL-pQ-LNp" secondAttribute="centerX" id="85r-BC-k0b"/>
+                            <constraint firstItem="zkM-0x-bh5" firstAttribute="trailing" secondItem="Ogw-Aq-7z6" secondAttribute="trailing" constant="1" id="8qA-uo-UAJ"/>
+                            <constraint firstItem="Ogw-Aq-7z6" firstAttribute="top" secondItem="zkM-0x-bh5" secondAttribute="top" id="Agj-iG-yyK"/>
+                            <constraint firstItem="HBC-Wz-Yai" firstAttribute="top" secondItem="Ogw-Aq-7z6" secondAttribute="bottom" id="OTu-OA-QYM"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="HBC-Wz-Yai" secondAttribute="bottom" constant="-34" id="gFi-Jn-F6a"/>
+                            <constraint firstItem="Ogw-Aq-7z6" firstAttribute="leading" secondItem="DDD-bu-lJI" secondAttribute="leadingMargin" constant="-17" id="l1i-h9-BEo"/>
+                            <constraint firstItem="HBC-Wz-Yai" firstAttribute="centerX" secondItem="DDD-bu-lJI" secondAttribute="centerX" id="nkU-jA-JbE"/>
+                            <constraint firstItem="NgL-pQ-LNp" firstAttribute="leading" secondItem="DDD-bu-lJI" secondAttribute="leadingMargin" id="qQ4-vP-gAF"/>
+                            <constraint firstItem="zkM-0x-bh5" firstAttribute="bottom" secondItem="NgL-pQ-LNp" secondAttribute="bottom" constant="388" id="s8h-2X-ysw"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="backBtn" destination="Zib-ax-8Ie" id="MIO-9H-1Th"/>
