@@ -35,6 +35,76 @@
             </objects>
             <point key="canvasLocation" x="55.725190839694655" y="-27.464788732394368"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="L48-HQ-Uc1">
+            <objects>
+                <viewController id="HSl-A7-buY" customClass="webViewController" customModule="Tamatem_web_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DDD-bu-lJI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HBC-Wz-Yai">
+                                <rect key="frame" x="0.0" y="44" width="393" height="739"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NgL-pQ-LNp">
+                                <rect key="frame" x="16" y="357" width="361" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Ogw-Aq-7z6">
+                                <rect key="frame" x="0.0" y="0.0" width="392" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Tamatem website" id="039-eS-pcG">
+                                        <leftBarButtonItems>
+                                            <barButtonItem title="Item" image="chevron.backward" catalog="system" id="Zib-ax-8Ie"/>
+                                            <barButtonItem title="Item" image="chevron.right" catalog="system" id="MYM-jP-nBg"/>
+                                        </leftBarButtonItems>
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="Item" image="chevron.down" catalog="system" id="p15-14-Ze0">
+                                                <connections>
+                                                    <action selector="closeAction:" destination="HSl-A7-buY" id="aoE-fQ-9A3"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Item" image="arrow.clockwise" catalog="system" id="GED-2V-VaY">
+                                                <connections>
+                                                    <action selector="reloadAction:" destination="HSl-A7-buY" id="D7v-ot-fVh"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zkM-0x-bh5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="Zib-ax-8Ie" id="MIO-9H-1Th"/>
+                        <outlet property="closeBtn" destination="p15-14-Ze0" id="IFW-am-EJQ"/>
+                        <outlet property="forwardBtn" destination="MYM-jP-nBg" id="t1K-d2-mUq"/>
+                        <outlet property="progressView" destination="NgL-pQ-LNp" id="LQP-IP-gL7"/>
+                        <outlet property="reloadBtn" destination="GED-2V-VaY" id="aJJ-ri-pCg"/>
+                        <outlet property="webView" destination="HBC-Wz-Yai" id="ih8-z2-CZg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rx5-GC-FJC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-23"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
