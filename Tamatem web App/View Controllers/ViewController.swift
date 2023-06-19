@@ -10,12 +10,13 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBAction func openBrowserBtn(_ sender: Any) {
-        let URL = "https://tamatemplus.com"
+        let URL = URLModel()
         self.performSegue(withIdentifier: "openBrowser", sender: URL)
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "openBrowser") {
+              let secondView = segue.destination as! webViewController
+            secondView.URLModel = sender as? URLModel
         }
     }
 }
