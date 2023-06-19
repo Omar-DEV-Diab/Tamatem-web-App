@@ -14,6 +14,7 @@
 		07759BA32A3F57C300D462FD /* Tamatem_web_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07759BA12A3F57C300D462FD /* Tamatem_web_App.xcdatamodeld */; };
 		07759BA52A3F57C700D462FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07759BA42A3F57C700D462FD /* Assets.xcassets */; };
 		07759BA82A3F57C700D462FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07759BA62A3F57C700D462FD /* LaunchScreen.storyboard */; };
+		0777A41E2A3F5CB700A9872E /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777A41D2A3F5CB700A9872E /* webViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		07759BA42A3F57C700D462FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07759BA72A3F57C700D462FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07759BA92A3F57C700D462FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0777A41D2A3F5CB700A9872E /* webViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				07759B982A3F57C300D462FD /* AppDelegate.swift */,
 				07759B9A2A3F57C300D462FD /* SceneDelegate.swift */,
 				07759B9C2A3F57C300D462FD /* ViewController.swift */,
+				0777A41D2A3F5CB700A9872E /* webViewController.swift */,
 				07759B9E2A3F57C300D462FD /* Main.storyboard */,
 				07759BA42A3F57C700D462FD /* Assets.xcassets */,
 				07759BA62A3F57C700D462FD /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0777A41E2A3F5CB700A9872E /* webViewController.swift in Sources */,
 				07759B9D2A3F57C300D462FD /* ViewController.swift in Sources */,
 				07759B992A3F57C300D462FD /* AppDelegate.swift in Sources */,
 				07759BA32A3F57C300D462FD /* Tamatem_web_App.xcdatamodeld in Sources */,
